@@ -20,4 +20,33 @@ On top of that, the language is locked to your hardware. Nobody else can run you
 
 ## Installation
 
-Requirements: Android phone + Termux app (install from F-Droid)
+**Requirements:** Android phone + Termux (install from F-Droid, not Play Store)
+
+**Step 1 — Install Python**
+
+    pkg install python
+
+**Step 2 — Create project folder**
+
+    mkdir veillang
+    cd veillang
+
+**Step 3 — Create the file**
+
+    nano veil.py
+
+Paste the veil.py code from this repo. Save: CTRL+O then Enter then CTRL+X
+
+**Step 4 — Run**
+
+    python veil.py
+
+**Step 5 — Try commands**
+
+    db_connect("mydb")
+    api_connect("github")
+    auth_setup("admin")
+
+Type exit to quit.
+
+> Built and tested on Android + Termux. No laptop required.
